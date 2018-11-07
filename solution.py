@@ -29,11 +29,14 @@ def solve(gym_environment, cis):
         # action = f(observation)
 
         # random action
-        action = np.random.uniform(-1, +1, 2)
+        
         # go straight
-        # action = [0.5, 0.5]
+
+        action = [0.1, 0.1]
+       
+            
         # go straight with some deviation
-        action = np.random.uniform(0, 0.1, 2) + 0.3
+        
 
         # we tell the environment to perform this action and we get some info back in OpenAI Gym style
         observation, reward, done, info = env.step(action)
